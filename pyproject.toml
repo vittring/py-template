@@ -1,29 +1,9 @@
-[tool.coverage.report]
-fail_under = 100
-show_missing = true
-
-[tool.coverage.run]
-command_line = "-m pytest"
-source = ["py-template", "tests"]
-
-[tool.isort]
-profile = "black"
-src_paths = ["py-template", "tests"]
-
-[tool.mypy]
-disallow_incomplete_defs = true
-disallow_untyped_defs = true
-explicit_package_bases = true
-files = ["**/*.py"]
-namespace_packages = true
-show_error_codes = true
-
 [tool.poetry]
 name = "py-template"
 version = "0.1.0"
 description = "Template repository for Python projects"
-authors = ["Scissor Tail <vittring@protonmail.com>"]
-license = "MIT"
+authors = ["Architect <scissortail@riseup.net>"]
+license = "GPL-3.0-only"
 homepage = "https://github.com/vittring/py-template"
 readme = "README.md"
 include = ["py-template/py.typed"]
